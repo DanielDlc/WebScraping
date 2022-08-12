@@ -2,7 +2,7 @@
 
 Conteúdo educacional de Web Scraping
 
-### Recomendado instalar uma virtualenv para isolar o ambiente de trabalho
+### Recomendado instalar uma `virtualenv` para isolar o ambiente de trabalho
 
 ```bash
 python3 -m venv venv
@@ -10,7 +10,7 @@ python3 -m venv venv
 
 ### Identificando Tecnologias utilizadas no Website
 
-##### iremos instalar a biblioteca builtwith
+##### iremos instalar a biblioteca `builtwith`
 
 ```bash
 pip install builtwith
@@ -22,13 +22,13 @@ pip install builtwith
 python3
 ```
 
-- inicialmente precisamos importar a biblioteca builtwith
+- inicialmente precisamos importar a biblioteca `builtwith`
 
 ```bash
 import builtwith
 ```
 
-- utilizando o método parse e informando a url do site que queremos identificar
+- utilizando o método `parse` e informando a url do site que queremos identificar
 
 ```bash
 builtwith.parse('https://www.facebook.com')
@@ -36,7 +36,7 @@ builtwith.parse('https://www.facebook.com')
 
 ### Identificando proprietário de um website
 
-##### utilizar a biblioteca Whois
+##### utilizar a biblioteca `Whois`
 
 ```bash
 pip install python-whois
@@ -48,7 +48,7 @@ pip install python-whois
 python3
 ```
 
-- importar a biblioteca whois
+- importar a biblioteca `whois`
 
 ```bash
 import whois
@@ -58,4 +58,15 @@ import whois
 
 ```bash
 print(whois.whois('globo.com'))
+```
+
+### Carregando páginas web
+
+##### utilizando requests através da biblioteca `urllib`
+
+```bash
+
+from urllib.request import urlopen
+html = urlopen("http://www.google.com")
+print(html.read())
 ```
