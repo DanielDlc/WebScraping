@@ -16,7 +16,7 @@ python3 -m venv venv
 pip install builtwith
 ```
 
-- Utilizar o console do python
+- Utilizar o interpretador do python
 
 ```bash
 python3
@@ -32,4 +32,30 @@ import builtwith
 
 ```bash
 builtwith.parse('https://www.facebook.com')
+```
+
+### Identificando proprietário de um website
+
+##### utilizar a biblioteca Whois
+
+```bash
+pip install python-whois
+```
+
+- Utilizar o interpretador do python
+
+```bash
+python3
+```
+
+- importar a biblioteca whois
+
+```bash
+import whois
+```
+
+- obtendo informações de um website
+
+```bash
+print(whois.whois('globo.com'))
 ```
