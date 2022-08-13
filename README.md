@@ -2,7 +2,7 @@
 
 Conteúdo educacional de Web Scraping
 
-### Recomendado instalar uma `virtualenv` para isolar o ambiente de trabalho
+### Recomendado instalar uma virtualenv para isolar o ambiente de trabalho
 
 ```bash
 python3 -m venv venv
@@ -36,7 +36,7 @@ builtwith.parse('https://www.facebook.com')
 
 ### Identificando proprietário de um website
 
-##### utilizar a biblioteca `Whois`
+##### utilizar a biblioteca Whois
 
 ```bash
 pip install python-whois
@@ -69,4 +69,36 @@ print(whois.whois('globo.com'))
 from urllib.request import urlopen
 html = urlopen("http://www.google.com")
 print(html.read())
+```
+
+### pegar informações das páginas web
+
+##### instalando a biblioteca `BeautifulSoup`
+
+- com a `virtualenv` ativa, vamos instalar a biblioteca:
+
+```bash
+pip install beautifulsoup4
+```
+
+- Utilizar o interpretador do python
+
+```bash
+python3
+```
+
+##### utilizando a biblioteca `BeautifulSoup`
+
+```bash
+from bs4 import BeautifulSoup
+```
+
+### Iniciar um servidor web
+
+##### recomendado criar um diretório `mkdir #nomeDoDiretório`
+
+- executar comando dentro do diretório
+
+```bash
+python -m http.server
 ```
